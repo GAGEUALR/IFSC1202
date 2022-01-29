@@ -1,1 +1,25 @@
-print("First Timestamp: ")
+print("First Timestamp")
+
+x = int(input("Enter Hours: "))
+y = int(input("Enter Minutes: "))
+z = int(input ("Enter Seconds: "))
+
+a = int(x * 3600)
+b = int(y * 60)
+c = int(z)
+
+print("Second Timestamp")
+
+u = int(input("Enter Hours: "))
+v = int(input("Enter Minutes: "))
+w = int(input("Enter Seconds: "))
+
+d = int(u * 3600)
+e = int(v * 60)
+f = int(w)
+
+secinhours = int(a - d)
+secinminutes = int(b - e)
+secinsec = int(c - f)
+
+print(secinhours - secinminutes - secinsec)
