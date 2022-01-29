@@ -18,8 +18,8 @@ d = int(u * 3600)
 e = int(v * 60)
 f = int(w)
 
-secinhours = int(a - d)
-secinminutes = int(b - e)
-secinsec = int(c - f)
+secinhours = int(d - a)
+secinminutes = int(e - b)
+secinsec = int(f - c)
 
 print(secinhours - secinminutes - secinsec)
