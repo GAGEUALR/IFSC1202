@@ -12,7 +12,9 @@ hundigit = (number // y)
 
 tensdigitright = (tensdigitwrong - (hundigit * x))
 
-print(onesdigit + tensdigitright + hundigit)
+sum = (onesdigit + tensdigitright + hundigit)
+
+print("{}".format(sum))
 
 
 
