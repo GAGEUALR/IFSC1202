@@ -4,4 +4,4 @@ y = 100
 
 z = (x % y)
 
-print("{}".format(z))
+print("Last two digits = {}".format(z))
