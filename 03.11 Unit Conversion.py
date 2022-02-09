@@ -16,13 +16,13 @@ if unit == "in" and new == "in":
     print(old * 1)
 
 if unit ==  "ft" and new == "in":
-    print(old // 12)
+    print(old * 12)
 
 if unit == "yd" and new == "in":
-    print(old // 36)
+    print(old * 36)
 
 if unit == "mi" and new == "in":
-    print(old // 63360)
+    print(old * 63360)
 
 
 
@@ -33,10 +33,10 @@ if unit ==  "ft"' and new ==  "ft"':
     print(old * 1)
 
 if unit == "yd" and new ==  "ft":
-    print(old // 3)
+    print(old * 3)
 
 if unit == "mi" and new ==  "ft":
-    print(old // 5280)
+    print(old * 5280)
 
 
 
@@ -50,18 +50,20 @@ if unit == "yd" and new == "yd":
     print(old * 1)
 
 if unit == "mi" and new == "yd":
-    print(old // 1760)
+    print(old * 1760)
 
 
 
 if unit == "in" and new == "mi":
-    print(old // 36)
+    print(old // 63360)
 
 if unit ==  "ft" and new == "mi":
-    print(old // 3)
+    print(old // 5280)
 
 if unit == "yd" and new == "mi":
-    print(old * 1)
+    print(old // 1760)
 
 if unit == "mi" and new == "mi":
-    print(old // 1760)
+    print(old * 1)
+
+
