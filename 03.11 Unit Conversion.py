@@ -4,10 +4,10 @@ new = (input("Enter To Unit: (in, ft, yd, mi): "))
 
 
 
-if (unit != "in") or (unit != "ft") or (unit != "yd") or (unit != "mi"):
+if (unit != "in") and (unit != "ft") and (unit != "yd") and (unit != "mi"):
     print("FromUnit is not Valid.")
 
-if (new != "in") or (new !=  "ft") or (new != "yd") or (new != "mi"):
+if (new != "in") and (new !=  "ft") and (new != "yd") and (new != "mi"):
     print("ToUnit is not Valid.")
 
 
@@ -27,9 +27,9 @@ if unit == "mi" and new == "in":
 
 
 if unit == "in" and new ==  "ft":
-    print(old //12)
+    print(round(old / 12,7))
 
-if unit ==  "ft"' and new ==  "ft"':
+if unit ==  "ft" and new ==  "ft":
     print(old * 1)
 
 if unit == "yd" and new ==  "ft":
@@ -41,10 +41,10 @@ if unit == "mi" and new ==  "ft":
 
 
 if unit == "in" and new == "yd":
-    print(old // 36)
+    print(round(old / 36,7))
 
 if unit ==  "ft" and new == "yd":
-    print(old // 3)
+    print(round(old / 3,7))
 
 if unit == "yd" and new == "yd":
     print(old * 1)
@@ -55,15 +55,17 @@ if unit == "mi" and new == "yd":
 
 
 if unit == "in" and new == "mi":
-    print(old // 63360)
+    print(round(old / 63360,7))
 
 if unit ==  "ft" and new == "mi":
-    print(old // 5280)
+    print(round(old / 5280,7))
 
 if unit == "yd" and new == "mi":
-    print(old // 1760)
+    print(round(old / 1760,7))
 
 if unit == "mi" and new == "mi":
     print(old * 1)
+
+
 
 
