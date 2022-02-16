@@ -4,9 +4,14 @@ y = 0
 z = 0
 while number != 0:
     number = int(input("Enter a Number (zero to quit): "))
+    while number == 0:
+        print("Sequence Length is 0")
     if number != 0:
         y = y + 1
         x = x + number 
         z = x / y
+        print(z)
+       
 
-print(z)
+    
+    
