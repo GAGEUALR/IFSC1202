@@ -1,8 +1,5 @@
-N = int(input("Enter N: "))
+n = 0
 
-
-if N >= 10:
-    print("INVALID")
-
-for N in range(1, 9+1):
-    print(1 * N)
+for n in range(1, 9):
+    n = input("Enter a Number: ")
+    
