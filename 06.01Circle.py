@@ -2,9 +2,11 @@ radius = open("06.01radius.py", "r")
 
 r = radius.read()
 
-empt = 1
+dia = 2
 
-def diameter(r, empt):
+def diameter(r, dia):
+    r ** dia 
+
 
 
 
