@@ -20,6 +20,7 @@ while x != "":
     x = float(x)
     print("{:15.5f} {:15.5f} {:15.5f} {:15.5f}".format(x, diameter(x), circumference(x), area(x)))
     x = radiusfile.readline()
+    
 radiusfile.close()
 
 
