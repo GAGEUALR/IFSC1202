@@ -4,9 +4,7 @@ a = (s.find("h"))
 b = s.rfind("h")
 b += 1
 
-c = str(s.rsplit(s[a:b]))
-
-c = c.replace()
+c = str(s.replace(s[a:b:1], ""))
 
 print("{}".format(c))
 
