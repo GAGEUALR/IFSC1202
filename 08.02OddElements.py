@@ -4,5 +4,5 @@ b = x.split()
 
 for i in range(len(b)):
     b[i] = int(b[i])
-
-print(b[::2])
+    if b[i] % 2 != 0:
+        print(b[i])
