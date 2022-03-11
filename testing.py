@@ -1,6 +1,8 @@
-s = input("Enter a value: ")
+x = input(":")
 
-a = s.split(" ")
-
-for i in range(len(a)):
-	print(a[::2])
+for a, b in zip(x, x[1:]):
+    if a * b > 0:
+        print(f"Found pair {a} {b}")
+        break
+else:
+    print("NONE")
