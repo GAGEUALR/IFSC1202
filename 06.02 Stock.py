@@ -19,10 +19,10 @@ a = stockfile.readline()
 
 print(percentchange())
 
-#while x != "":
+while x != "":
     x = float(x)
     a = float(a)
-    print("{:<10}{:<10}\n{:<10}".format(x, a, percentchange()))
+    print("{:<10}{:<10}{:<10}".format(x, a, percentchange()))
     x = stockfile.readline()
 
     
