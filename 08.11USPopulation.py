@@ -33,11 +33,8 @@ for i in range(1, len(b)):
         if b[i] - b[i - 1] > maxchange:
                 maxchange = b[i]-b[i -1]
                 maxyear = year
-        #if i > 1:
-                #avchange = ((percentchange) + (percentchange(b[i - 1])))/i
 
 print("\nMinimum Change = ", minchange, "({})".format(minyear))
 
 print("Maximum Change = ", maxchange,"({})".format(maxyear))
 
-# couldn't figure out avchange, kept getting "can't call float" error.
