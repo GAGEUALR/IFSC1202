@@ -10,7 +10,8 @@ class RetailItem ():
         return InventoryValue
 
     def ChangePrice (self, pricechange):
-        
+        self.price += newprice
+        return self.price
 
 def print_itemlist(itemlist):
 	print("{:<30}{:<30}{:<30}{:<30}\n".format("Description", "Units on Hand", "Price", "Inventory Value"))
