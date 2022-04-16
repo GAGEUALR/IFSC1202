@@ -10,11 +10,12 @@ class RetailItem ():
         return InventoryValue
 
     def ChangePrice (self, pricechange):
+        self.price = float(0)
         self.price += newprice
         return self.price
 
 def print_itemlist(itemlist):
-	print("{:<30}{:<30}{:<30}{:<30}\n".format("Description", "Units on Hand", "Price", "Inventory Value"))
+	print("\n{:<30}{:<30}{:<30}{:<30}".format("Description", "Units on Hand", "Price", "Inventory Value"))
 	for i in range(len(itemlist)):
 		print ("{:<30}{:<30}{:<30.2f}{:<30.2f}".format(itemlist[i].description, itemlist[i].unitsonhand, itemlist[i].price, itemlist[i].InventoryValue()))
 
@@ -42,8 +43,11 @@ y = upfile.readline()
 
 while y != "":
     ysplit = y.split(",")
-    itemlist[find_item(itemlist, ysplit[0])].ChangePrice() $$$$$$$$$$$$$$$$$$$
+    newprice = float(ysplit[1])
+    itemlist[find_item(itemlist, ysplit[0])].ChangePrice(newprice) 
     y = upfile.readline()
 
+print_itemlist(itemlist)
 
-print()
+upfile.close()
+itemfile.close()
