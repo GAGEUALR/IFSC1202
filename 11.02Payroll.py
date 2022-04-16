@@ -7,7 +7,7 @@ class Employee ():
         self.hoursworked = hoursworked
         self.wage = wage
         
-        def weeklypay(self):
+def weeklypay(self):
              hoursworked = float(employee1.hoursworked)
              wage = float(employee1.wage)
              if hoursworked <= 40:
